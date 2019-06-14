@@ -1,0 +1,14 @@
+<form class="form-style" #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
+  <ul>
+    <li>
+      <input type="text" name="login" class="field-style field-full" placeholder="Login" ngModel required minlength="4"/>
+    </li>
+    <li>
+      <input type="password" name="password" class="field-style field-full" placeholder="Password" ngModel required minlength="8"/>
+    </li>
+    <li>
+      <input type="submit" value="Log In" class="field-full"/>
+    </li>
+  </ul>
+</form>
+

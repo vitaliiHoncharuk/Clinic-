@@ -1,0 +1,7 @@
+<div class="nav">
+  <button (click)="showLoginClick()" class="btn">Login</button>
+  <button (click)="showRegisterClick()" class="btn">Register</button>
+</div>
+<div *ngIf="register" ><app-registration></app-registration></div>
+<div *ngIf="login"><app-login></app-login></div>
+

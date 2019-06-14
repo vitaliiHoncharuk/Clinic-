@@ -1,0 +1,28 @@
+body {
+  background: #DFD297;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #DFD297, #DFD266);
+  background: -moz-linear-gradient(to top, #DFD297, #DFD266);
+  background: -o-linear-gradient(to top, #DFD297, #DFD266);
+  background: linear-gradient(to top, #DFD297, #DFD266);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  margin: 1em 0 0.5em 0;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #AC2832;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 58px;
+  line-height: 54px;
+  text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+body {
+  background: url(assets/medical-background-with-loop_4p1uvboye__F0008.png) 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
