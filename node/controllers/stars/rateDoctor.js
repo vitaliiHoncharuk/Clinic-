@@ -1,6 +1,5 @@
 /*
 
-admin only <-
 expected request [POST] : http://localhost:3000/api/rate
 Headers - > token [user]
 
