@@ -21,8 +21,8 @@ module.exports = async (req, res) => {
         const token = req.get('Authorization');
         const {id, roles} = tokenVerificator(token, secret);
         const doctorId = req.body.id;
-
-        if (await StarModel.countDocuments({"userId": id}) > 0 && roles === constantRoles.Doctor) {
+        const alreadyRated = await StarModel.countDocuments({"userId": id,"doctorId":doctorId});
+        if (alreadyRated > 0 || roles === constantRoles.Doctor){
             throw new Error("You are not allowed to do this!")
         }
 
